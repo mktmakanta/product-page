@@ -1,9 +1,74 @@
 body {
-  background: #EE7214;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 .first-con {
   width: 100vw;
-  height: 30px;
+  height: 40px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.first-con .brand-name {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.first-con .profile-order {
+  display: flex;
+  margin: 0px 10px;
+}
+.first-con .profile-order .order-cart {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
   background: yellow;
+  margin: 0px 10px;
+  border-radius: 50%;
+}
+.first-con .profile-order .profile {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: yellow;
+  border-radius: 50%;
+}
+.first-con .nav {
+  display: none;
+  width: 0px;
+  height: 0px;
+}
+
+.second-con {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.second-con .images-con {
+  width: 100vw;
+  height: 500px;
+  background-image: url(/images/image-one.jpg) center center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.second-con .images-con img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.second-con .discription {
+  width: 100vw;
+}
+.second-con .discription h3 {
+  font-size: 2rem;
+  color: yellow;
+}
+.second-con .discription h1 {
+  font-size: 3rem;
+  color: green;
 }
