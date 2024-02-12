@@ -23,21 +23,32 @@ body{
   .profile-order{
     display: flex;
     margin: 0px 10px;
-    margin-right: 30px;
+    margin-right: 33px;
     .order-cart{
       display: inline-block;
-      width: 40px;
-      height: 40px;
-      background: yellow;
+      width: 35px;
+      height: 35px;
       margin: 0px 10px;
       border-radius: 50%;
+      
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+      }
     }
     .profile{
       display: inline-block;
-      width: 40px;
-      height: 40px;
-      background: yellow;
+      width: 35px;
+      height: 35px;
       border-radius: 50%;
+      margin-left: 10px;
+      img{
+        width: 100%;
+        height: 100%;
+        
+      }
     }
   }
   .nav{
