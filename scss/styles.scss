@@ -13,17 +13,37 @@ body{
   width: 100vw;
   height: 40px;
   font-size: 1rem;
+  top: 0px;
+  right: 0;
+  // position: sticky;
   display: flex;
-  justify-content: space-between;
   margin: 10px 30px;
+  margin-left: 20px;
+  .hamburger{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-right: 0px;
+    border-radius: 50px;
+    align-self: center;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  
+  }
   .brand-name{
     font-size: 2.5rem;
     font-weight: 800;
+    margin-left: 10px;
+    
   }
   .profile-order{
     display: flex;
     margin: 0px 10px;
-    margin-right: 33px;
+    // margin-right: 20px;
+    position: absolute;
+    right: 10px;
     .order-cart{
       display: inline-block;
       width: 35px;
@@ -51,11 +71,56 @@ body{
       }
     }
   }
-  .nav{
-    display: none;
-    width: 0px;
-    height: 0px;
+}
+.nav{
+  
+  position: relative;
+  top: 0;
+  left: 0;
+  background: rgb(252, 247, 225);
+  z-index: 2;
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  .close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    
   }
+  ul{
+    font-size: 2.4rem;
+    li{
+      margin: 40px;
+      font-weight: 700;
+      list-style-type: none;
+      a{
+        text-decoration: none;
+        color: $secondary-color;
+          margin: 30px;
+          padding: 10px 100px ;
+          width: 100vw;
+          border-radius: 60px;
+          background: rgba(238, 135, 17, 0.3);
+        
+      }
+
+    }
+  }
+}
+.hide{
+  // display: block;
 }
 .second-con{
   width: 100vw;
@@ -113,6 +178,7 @@ body{
       font-size: 1.5rem;
       color: $tertiary-color;
       font-weight: 800;
+      font-family: Arial, Helvetica, sans-serif;
       
     }
     h1{

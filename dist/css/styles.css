@@ -11,18 +11,34 @@ body {
   width: 100vw;
   height: 40px;
   font-size: 1rem;
+  top: 0px;
+  right: 0;
   display: flex;
-  justify-content: space-between;
   margin: 10px 30px;
+  margin-left: 20px;
+}
+.first-con .hamburger {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin-right: 0px;
+  border-radius: 50px;
+  align-self: center;
+}
+.first-con .hamburger img {
+  width: 100%;
+  height: 100%;
 }
 .first-con .brand-name {
   font-size: 2.5rem;
   font-weight: 800;
+  margin-left: 10px;
 }
 .first-con .profile-order {
   display: flex;
   margin: 0px 10px;
-  margin-right: 33px;
+  position: absolute;
+  right: 10px;
 }
 .first-con .profile-order .order-cart {
   display: inline-block;
@@ -48,10 +64,48 @@ body {
   width: 100%;
   height: 100%;
 }
-.first-con .nav {
-  display: none;
-  width: 0px;
-  height: 0px;
+
+.nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: rgb(252, 247, 225);
+  z-index: 2;
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.nav .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+}
+.nav .close img {
+  width: 100%;
+  height: 100%;
+}
+.nav ul {
+  font-size: 2.4rem;
+}
+.nav ul li {
+  margin: 40px;
+  font-weight: 700;
+  list-style-type: none;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: #000;
+  margin: 30px;
+  padding: 10px 100px;
+  width: 100vw;
+  border-radius: 60px;
+  background: rgba(238, 135, 17, 0.3);
 }
 
 .second-con {
@@ -110,6 +164,7 @@ body {
   font-size: 1.5rem;
   color: #EE7214;
   font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .second-con .description h1 {
   font-size: 2.5rem;
