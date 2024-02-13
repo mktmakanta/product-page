@@ -6,16 +6,18 @@ body{
   margin: 0px;
   padding: 0px;
   font-family: "Roboto", sans-serif;
+}
+.wrapper{
   font-weight: 400;
   font-style: normal;
+  position: relative;
+
 }
 .first-con{
   width: 100vw;
   height: 40px;
   font-size: 1rem;
-  top: 0px;
-  right: 0;
-  // position: sticky;
+  // position: absolute;
   display: flex;
   margin: 10px 30px;
   margin-left: 20px;
@@ -119,9 +121,7 @@ body{
     }
   }
 }
-.hide{
-  // display: block;
-}
+
 .second-con{
   width: 100vw;
   height: 100vh;
