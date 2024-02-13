@@ -269,3 +269,38 @@ body{
   }
 }
 }
+
+
+
+
+//tablet view
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .first-con{
+    width: 100vw;
+    height: 3rem;
+    border: 2px solid red;
+    display: flex;
+    margin: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
